@@ -156,3 +156,21 @@
     font-weight: 700;
     color: rgba(224, 44, 109, 1);
 }
+
+/* feature-section */
+
+.feature-section{
+    justify-content: space-between;
+    gap: calc(96rem / 16);
+    margin: calc(120rem / 16) calc(125rem /16) calc(120rem / 16) calc(125rem /16);
+}
+
+.feature-details-title{
+    color: rgba(10, 8, 38, 1);
+    font-size: calc(38rem / 16);
+    font-weight: 700;
+}
+.feature-details-description{
+    font-size: 1rem;
+    font-weight: 700;
+}
