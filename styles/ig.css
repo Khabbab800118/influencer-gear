@@ -31,6 +31,16 @@
     color: rgba(58, 58, 58, 1);
 }
 
+.text-gray900{
+    color: rgba(24, 25, 31, 1);
+}
+.dark-clr{
+    color: rgba(0, 0, 0, 0.87);
+}
+.gray50{
+    color: rgba(120, 120, 133, 1);
+}
+
 .primary-btn {
     color: white;
     background-color: rgba(224, 44, 109, 1);
@@ -103,15 +113,46 @@
 
 .card-section{
     text-align: center;
+    margin: calc(100rem / 16) 12rem 0rem 12rem;
 }
 
 .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 7rem 9rem 0rem 9rem;
+    margin-top: 4rem;
     gap: 1.5rem;
     text-align: start;
 }
+.card-section-title{
+    font-size: calc(28rem / 16);
+    font-weight: 500;
+}
 .card{
     box-shadow: 0px 0px 15px lightgrey;
+    width: calc(300rem / 16);
+    height: auto;
+    padding: 1rem;
+}
+.card-title{
+    font-size: calc(28rem / 16);
+    font-weight: 500;
+}
+.card-price{
+    font-size: calc(24rem / 16);
+    font-weight: 400;
+}
+.rating-point{
+    font-size: calc(14rem / 16);
+    font-weight: 700;
+}
+.card-des{
+    font-size: calc(14rem / 16);
+    font-weight: 700;
+}
+.card-section-end{
+    position: relative;
+    left: 150%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(224, 44, 109, 1);
 }
