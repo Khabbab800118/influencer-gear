@@ -174,3 +174,23 @@
     font-size: 1rem;
     font-weight: 700;
 }
+
+/* footer section */
+
+.footer{
+    background-color: rgba(10, 8, 38, 1);
+    color: white;
+    padding: calc(50rem / 16) 0rem;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+.footer-title{
+    font-size: calc(24rem / 16);
+    font-weight: 700;
+}
+.footer-copyright-notes{
+    color: rgba(217, 219, 225, 1);
+    font-size: 1rem;
+    font-weight: 700;
+}
