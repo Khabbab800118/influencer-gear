@@ -31,13 +31,15 @@
     color: rgba(58, 58, 58, 1);
 }
 
-.text-gray900{
+.text-gray900 {
     color: rgba(24, 25, 31, 1);
 }
-.dark-clr{
+
+.dark-clr {
     color: rgba(0, 0, 0, 0.87);
 }
-.gray50{
+
+.gray50 {
     color: rgba(120, 120, 133, 1);
 }
 
@@ -104,52 +106,59 @@
 
 /* sponser section */
 
-.sponser{
+.sponser {
     justify-content: space-between;
     margin: 7rem 9rem 0rem 9rem;
 }
 
 /* card section */
 
-.card-section{
+.card-section {
     text-align: center;
     margin: calc(100rem / 16) 12rem 0rem 12rem;
 }
 
-.cards{
+.cards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 4rem;
     gap: 1.5rem;
     text-align: start;
 }
-.card-section-title{
+
+.card-section-title {
     font-size: calc(28rem / 16);
     font-weight: 500;
 }
-.card{
+
+.card {
     box-shadow: 0px 0px 15px lightgrey;
     width: calc(300rem / 16);
     height: auto;
     padding: 1rem;
 }
-.card-title{
+
+.card-title {
     font-size: calc(28rem / 16);
     font-weight: 500;
 }
-.card-price{
+
+.card-price {
     font-size: calc(24rem / 16);
     font-weight: 400;
 }
-.rating-point{
+
+.rating-point {
     font-size: calc(14rem / 16);
     font-weight: 700;
 }
-.card-des{
+
+.card-des {
     font-size: calc(14rem / 16);
     font-weight: 700;
 }
-.card-section-end{
+
+.card-section-end {
     position: relative;
     left: 150%;
     font-size: 1rem;
@@ -159,25 +168,26 @@
 
 /* feature-section */
 
-.feature-section{
+.feature-section {
     justify-content: space-between;
     gap: calc(96rem / 16);
     margin: calc(120rem / 16) calc(125rem /16) calc(120rem / 16) calc(125rem /16);
 }
 
-.feature-details-title{
+.feature-details-title {
     color: rgba(10, 8, 38, 1);
     font-size: calc(38rem / 16);
     font-weight: 700;
 }
-.feature-details-description{
+
+.feature-details-description {
     font-size: 1rem;
     font-weight: 700;
 }
 
 /* footer section */
 
-.footer{
+.footer {
     background-color: rgba(10, 8, 38, 1);
     color: white;
     padding: calc(50rem / 16) 0rem;
@@ -185,12 +195,105 @@
     text-align: center;
     justify-content: center;
 }
-.footer-title{
+
+.footer-title {
     font-size: calc(24rem / 16);
     font-weight: 700;
 }
-.footer-copyright-notes{
+
+.footer-copyright-notes {
     color: rgba(217, 219, 225, 1);
     font-size: 1rem;
     font-weight: 700;
+}
+
+/* for small devices */
+
+@media screen and (max-width:576px) {
+    * {
+        margin: 0px;
+    }
+
+    /* navbar section */
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        gap: 3rem;
+    }
+
+    .navbar ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* banner section */
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        background-image: url('../images/Circle\ design.svg');
+        background-position: top center;
+        gap: 5rem;
+    }
+    .banner-details{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .banner-img {
+        margin-left: 0px
+    }
+    .banner-img img{
+        width: 300px;
+    }
+
+    /* sponser section */
+
+    .sponser img{
+        width: 50px;
+    }
+    .sponser {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 2rem;
+    }
+
+
+    /* card section */
+    .card-section {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-section-end {
+        position: relative;
+        left: 30%;
+    }
+
+    /* features section */
+    .feature-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 0rem;
+    }
+    .feature-details{
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
 }
